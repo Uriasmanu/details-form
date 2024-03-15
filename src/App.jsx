@@ -1,7 +1,7 @@
 import EstilosGlobais from "./componentes/estilosGlobais"
-import styled from  'styled-components';
+import styled from 'styled-components';
 
-const  ContainerApp = styled.div`
+const ContainerApp = styled.div`
     display: flex;
     justify-content: space-between;
 `
@@ -14,11 +14,13 @@ function App() {
 
   return (
     <>
-      <EstilosGlobais/>
+      <EstilosGlobais />
       <ContainerApp>
-      <Banner imagem={banner} altImagem={banner}/>
-      <Formulario/>
-      <Cartao/>
+        <div>
+          <Banner imagem={banner} altImagem={banner} />
+          <Cartao />
+        </div>
+        <Formulario />
       </ContainerApp>
     </>
   )

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Botao from '../botao';
+import Cartao from '../cartao';
 
 
 const Form = styled.form`
@@ -63,29 +64,32 @@ const Div = styled.div`
 const Formulario = () => {
 
     return (
-        <Form>
-            <label htmlFor="nome">CARDHOLDER NAME</label>
-            <input required type="text" placeholder='e.g. Jane Appleseed' />
+        <>
+            <Form>
+                <label htmlFor="nome">CARDHOLDER NAME</label>
+                <input required type="text" placeholder='e.g. Jane Appleseed' />
 
-            <label htmlFor="numero">CARD NUMBER</label>
-            <input required type="text" placeholder='e.g. 1234 5678 9123 0000' />
+                <label htmlFor="numero">CARD NUMBER</label>
+                <input required type="text" placeholder='e.g. 1234 5678 9123 0000' />
 
-            <Div>
-                <section>
-                    <label htmlFor="exp">EXP.DATE (MM/YY)</label>
-                    <div>
-                        <input required type="number" placeholder='MM' />
-                        <input required type="number" placeholder='YY' />
-                    </div>
-                </section>
-                <section>
-                    <label htmlFor="cvc">CVC</label>
-                    <input required type="number" placeholder='e.g. 123' />
-                </section>
-            </Div>
+                <Div>
+                    <section>
+                        <label htmlFor="exp">EXP.DATE (MM/YY)</label>
+                        <div>
+                            <input required type="number" placeholder='MM' />
+                            <input required type="number" placeholder='YY' />
+                        </div>
+                    </section>
+                    <section>
+                        <label htmlFor="cvc">CVC</label>
+                        <input required type="number" placeholder='e.g. 123' />
+                    </section>
+                </Div>
 
-            <Botao>Confirm</Botao>
-        </Form>
+                <Botao>Confirm</Botao>
+            </Form>
+
+        </>
     )
 }
 
