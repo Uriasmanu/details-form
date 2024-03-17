@@ -6,27 +6,6 @@ import WorkSansVariableFont from './fontes/WorkSans-VariableFont_wght.ttf'
 
 const EstilosGlobais = createGlobalStyle`
 
-@font-face {
-    font-family: 'Work Sans Variable';
-    src: url(${WorkSansVariableFont}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Work Sans Variable';
-    src: url(${WorkSansVariableFont}) format('truetype');
-    font-weight: bold; /* Aqui você define a fonte em negrito */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Work Sans Italic Variable';
-    src: url(${WorkSansItalic}) format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -36,7 +15,7 @@ body {
     min-height: 100vh;
     width: 100%;
     background-color: hsl(0, 0%, 100%);
-    font-family: 'Work Sans Variable', sans-serif; /* Aqui você define a fonte padrão para o corpo do documento */
+    font-family: Space Grotesk, sans-serif; /* Aqui você define a fonte padrão para o corpo do documento */
 }
 main {
   display: block;
@@ -100,6 +79,7 @@ textarea {
 button,
 input { 
   overflow: visible;
+
 }
 button,
 select { 

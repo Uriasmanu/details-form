@@ -8,7 +8,8 @@ const ContainerApp = styled.div`
 import banner from '/public/images/bg-main-desktop.png'
 import Banner from "./componentes/banner";
 import Formulario from "./componentes/formulario";
-import Cartao from "./componentes/cartao";
+import Cartao from "./componentes/cartaoFrente";
+
 
 function App() {
 

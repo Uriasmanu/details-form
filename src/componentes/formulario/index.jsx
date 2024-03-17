@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Botao from '../botao';
-import Cartao from '../cartao';
+
 
 
 const Form = styled.form`
