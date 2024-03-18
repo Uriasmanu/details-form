@@ -81,7 +81,6 @@ const Div = styled.div`
 const Cartao = () => {
     return (
         <>
-           
             <ContainerCartão>
                 <Div>
                     <img src={logo} alt="" />
