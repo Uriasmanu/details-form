@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const ContainerApp = styled.div`
     display: flex;
     justify-content: space-between;
+    gap: 19%;
+
 `
 import banner from '/public/images/bg-main-desktop.png'
 import Banner from "./componentes/banner";
@@ -18,7 +20,7 @@ function App() {
     <>
       <EstilosGlobais />
       <ContainerApp>
-        <div>
+        <div className="container-cartoes">
           <Banner imagem={banner} altImagem={banner} />
           <div>
             <Cartao />
