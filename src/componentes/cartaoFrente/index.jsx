@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import cartao1 from "../../../public/images/bg-card-front.png";
 import logo from "../../../public/images/card-logo.svg";
 

@@ -9,6 +9,7 @@ import banner from '/public/images/bg-main-desktop.png'
 import Banner from "./componentes/banner";
 import Formulario from "./componentes/formulario";
 import Cartao from "./componentes/cartaoFrente";
+import Cartao2 from "./componentes/cartaoCosta";
 
 
 function App() {
@@ -19,7 +20,10 @@ function App() {
       <ContainerApp>
         <div>
           <Banner imagem={banner} altImagem={banner} />
-          <Cartao />
+          <div>
+            <Cartao />
+            <Cartao2 />
+          </div>
         </div>
         <Formulario />
       </ContainerApp>
