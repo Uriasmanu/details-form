@@ -5,6 +5,7 @@ const ContainerApp = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 19%;
+    height: 100vh;
 
 `
 import banner from '/public/images/bg-main-desktop.png'
