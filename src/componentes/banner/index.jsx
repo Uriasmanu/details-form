@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 const ContainerBanner = styled.div`
     height: 100vh;
+    width: 30vw;
 
     img{
+        width: 100%;
         height: 100%;
     }
 `
