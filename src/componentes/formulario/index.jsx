@@ -67,22 +67,22 @@ const Formulario = () => {
         <>
             <Form>
                 <label htmlFor="nome">CARDHOLDER NAME</label>
-                <input required type="text" placeholder='e.g. Jane Appleseed' />
+                <input required type="text" placeholder='e.g. Jane Appleseed' maxLength={20} />
 
                 <label htmlFor="numero">CARD NUMBER</label>
-                <input required type="text" placeholder='e.g. 1234 5678 9123 0000' />
+                <input required type="text" placeholder='e.g. 1234 5678 9123 0000' maxLength={16}/>
 
                 <Div>
                     <section>
                         <label htmlFor="exp">EXP.DATE (MM/YY)</label>
                         <div>
-                            <input required type="number" placeholder='MM' />
-                            <input required type="number" placeholder='YY' />
+                            <input required type="text" placeholder='MM' pattern="0[1-9]|1[0-2]"  maxLength={2} inputmode="numeric"/>
+                            <input required type="text" placeholder='YY' pattern="0[1-9]|1[0-2]"  maxLength={2} inputmode="numeric"/>
                         </div>
                     </section>
                     <section>
                         <label htmlFor="cvc">CVC</label>
-                        <input required type="number" placeholder='e.g. 123' />
+                        <input required type="text" placeholder='e.g. 123' maxLength={3} />
                     </section>
                 </Div>
 
