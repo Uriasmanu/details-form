@@ -74,10 +74,6 @@ const Formulario = () => {
           const parte3 = inputValue.substring(8, 12);
           const parte4 = inputValue.substring(12, 16);
 
-          console.log('Parte 1:', parte1);
-          console.log('Parte 2:', parte2);
-          console.log('Parte 3:', parte3);
-          console.log('Parte 4:', parte4);
       }
     };
   
