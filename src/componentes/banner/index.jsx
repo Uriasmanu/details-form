@@ -1,6 +1,18 @@
+import styled from 'styled-components';
+
+const ContainerBanner = styled.div`
+    height: 100vh;
+
+    img{
+        height: 100%;
+    }
+`
+
 const Banner = ({imagem, altImagem}) =>{
     return(
-        <img src={imagem} alt={altImagem} />
+        <ContainerBanner>
+            <img src={imagem} alt={altImagem} />
+        </ContainerBanner>
     )
 }
 
