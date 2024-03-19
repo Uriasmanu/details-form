@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const ContainerBanner = styled.div`
@@ -5,17 +6,30 @@ const ContainerBanner = styled.div`
     width: 30vw;
 
     img{
-        width: 100%;
+        width: 100vw;
         height: 100%;
     }
 `
 
-const Banner = ({imagem, altImagem}) =>{
+const Banner = () =>{
+    const [banner, setBanner] = useState('');
+
+    useEffect(() => {
+        // Verificar se é um dispositivo móvel
+        const isMobile = window.matchMedia("(max-width: 600px)").matches;
+        // Definir o banner com base no dispositivo
+        if (isMobile) {
+            setBanner('/public/images/bg-main-mobile.png');
+        } else {
+            setBanner('/public/images/bg-main-desktop.png');
+        }
+    }, []);
+
     return(
         <ContainerBanner>
-            <img src={imagem} alt={altImagem} />
+            <img src={banner} alt="Banner" />
         </ContainerBanner>
     )
 }
 
-export default Banner; 
+export default Banner;

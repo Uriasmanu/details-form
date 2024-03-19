@@ -7,8 +7,16 @@ const ContainerApp = styled.div`
     gap: 19%;
     height: 100vh;
 
+    @media (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      gap: 19%;
+      height: 100vh;
+      flex-direction: column;
+
+    }
+
 `
-import banner from '/public/images/bg-main-desktop.png'
 import Banner from "./componentes/banner";
 import Formulario from "./componentes/formulario";
 import Cartao from "./componentes/cartaoFrente";
@@ -24,7 +32,7 @@ function App() {
         <EstilosGlobais />
         <ContainerApp>
           <div className="container-cartoes">
-            <Banner imagem={banner} altImagem={banner} />
+            <Banner/>
             <div>
               <Cartao />
               <Cartao2 />
