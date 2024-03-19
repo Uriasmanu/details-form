@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Botao from '../botao';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { Context } from '../../contex';
 
 const Form = styled.form`
     display: flex;
@@ -61,22 +62,19 @@ const Div = styled.div`
 `
 
 const Formulario = () => {
+    const {
+        name, 
+        cvc, 
+        titular,
+        dia, 
+        mes,
+        handleNameChange, 
+        handleCvcChange, 
+        handleTitularChange,
+        handleMesChange,
+        handleDiaChange,
 
-    const [name, setName] = useState('');
-  
-    const handleNameChange = (event) => {
-      setName(event.target.value);
-
-      const inputValue = event.target.value;
-      if (inputValue.length >= 4) {
-        const parte1 = inputValue.substring(0, 4);
-          const parte2 = inputValue.substring(4, 8);
-          const parte3 = inputValue.substring(8, 12);
-          const parte4 = inputValue.substring(12, 16);
-
-      }
-    };
-  
+    } =  useContext(Context) 
 
     return (
         <>
@@ -87,6 +85,8 @@ const Formulario = () => {
                 type="text" 
                 placeholder='e.g. Jane Appleseed' 
                 maxLength={20} 
+                value={titular}
+                onChange={handleTitularChange}
                 />
 
 
@@ -105,13 +105,36 @@ const Formulario = () => {
                     <section>
                         <label htmlFor="exp">EXP.DATE (MM/YY)</label>
                         <div>
-                            <input required type="text" placeholder='MM' pattern="0[1-9]|1[0-2]"  maxLength={2} />
-                            <input required type="text" placeholder='YY' pattern="0[1-9]|1[0-2]"  maxLength={2} />
+                            <input 
+                            required 
+                            type="text" 
+                            placeholder='MM' 
+                            pattern="0[1-9]|1[0-2]"  
+                            maxLength={2}
+                            value={mes}
+                            onChange={handleMesChange}
+                             />
+                            <input 
+                            required 
+                            type="text" 
+                            placeholder='YY' 
+                            pattern="0[1-9]|1[0-2]"  
+                            maxLength={2}
+                            value={dia}
+                            onChange={handleDiaChange}
+                            />
                         </div>
                     </section>
                     <section>
                         <label htmlFor="cvc">CVC</label>
-                        <input required type="text" placeholder='e.g. 123' maxLength={3} />
+                        <input 
+                        required 
+                        type="text" 
+                        placeholder='e.g. 123' 
+                        maxLength={3} 
+                        value={cvc}
+                        onChange={handleCvcChange}
+                        />
                     </section>
                 </Div>
 

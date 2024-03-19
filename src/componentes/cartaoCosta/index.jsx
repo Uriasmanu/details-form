@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import cartao2 from "../../../public/images/bg-card-back.png";
+import { useContext } from 'react';
+import { Context } from '../../contex';
 
 
 const CartãoBack = styled.div`
@@ -49,10 +51,20 @@ const Div = styled.div`
 `;
 
 const Cartao2 = () => {
+    const {
+        cvc,
+        handleCvcChange,
+
+    } =  useContext(Context) 
     return(
         <CartãoBack>
             <Div>
-            <input type="number" placeholder='000' />
+            <input 
+            type="number" 
+            placeholder='000'
+            value={cvc}
+            onChange={handleCvcChange} 
+            />
             </Div>
         </CartãoBack>
     )

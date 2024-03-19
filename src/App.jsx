@@ -13,23 +13,26 @@ import Banner from "./componentes/banner";
 import Formulario from "./componentes/formulario";
 import Cartao from "./componentes/cartaoFrente";
 import Cartao2 from "./componentes/cartaoCosta";
+import { ContextProvider } from "./contex";
 
 
 function App() {
 
   return (
     <>
-      <EstilosGlobais />
-      <ContainerApp>
-        <div className="container-cartoes">
-          <Banner imagem={banner} altImagem={banner} />
-          <div>
-            <Cartao />
-            <Cartao2 />
+      <ContextProvider>
+        <EstilosGlobais />
+        <ContainerApp>
+          <div className="container-cartoes">
+            <Banner imagem={banner} altImagem={banner} />
+            <div>
+              <Cartao />
+              <Cartao2 />
+            </div>
           </div>
-        </div>
-        <Formulario />
-      </ContainerApp>
+          <Formulario />
+        </ContainerApp>
+      </ContextProvider>
     </>
   )
 }
