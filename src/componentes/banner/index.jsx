@@ -6,8 +6,17 @@ const ContainerBanner = styled.div`
     width: 30vw;
 
     img{
-        width: 100vw;
+        width: 30vw;
         height: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+
+        img{
+        width: 100vw;
+        height: 70%;
+    }
     }
 `
 

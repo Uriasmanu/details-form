@@ -30,6 +30,19 @@ const Form = styled.form`
             cursor: pointer;
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        font-family: Space Grotesk;
+        width: 330px;
+        height: 300px;
+        position:  relative;
+        top: -17rem;
+        right: 0%;
+        font-weight: bold;
+        gap: 10px;
+    }
 `
 const Div = styled.div`
     display: flex;

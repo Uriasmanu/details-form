@@ -5,6 +5,10 @@ const Button = styled.button`
     color: white;
     height: 35px;
     border-radius: 8px;
+
+    @media only screen and (max-width: 600px) {
+        height: 55px;
+    }
 `
 
 const Botao = ({children}) =>{

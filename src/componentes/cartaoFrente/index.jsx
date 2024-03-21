@@ -22,6 +22,18 @@ const ContainerCartão = styled.div`
     input::placeholder {
         color: #fff;
     }
+
+    @media only screen and (max-width: 600px) {
+        position: absolute;
+        width: 80vw;
+        height: 230px;
+        z-index: 2;
+        top: 35%;
+        left: 3%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 `;
 
 const Div = styled.div` 
@@ -85,6 +97,8 @@ const Div = styled.div`
             width: 25px;
         }
     }
+
+    
 `;
 
 const Cartao = () => {

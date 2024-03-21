@@ -9,10 +9,11 @@ const ContainerApp = styled.div`
 
     @media (max-width: 600px) {
       display: flex;
-      justify-content: center;
-      gap: 19%;
-      height: 100vh;
-      flex-direction: column;
+    justify-content: center;
+    gap: 19%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
 
     }
 

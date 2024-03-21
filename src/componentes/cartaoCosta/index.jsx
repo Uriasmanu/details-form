@@ -22,6 +22,17 @@ const CartãoBack = styled.div`
         letter-spacing: 2px;
     }
     
+    @media only screen and (max-width: 600px) {
+        position: absolute;
+        width: 80vw;
+        height: 230px;
+        z-index: 1;
+        top: 10rem;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 `;
 
 const Div = styled.div` 
