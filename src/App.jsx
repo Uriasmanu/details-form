@@ -6,6 +6,7 @@ const ContainerApp = styled.div`
     justify-content: space-between;
     gap: 19%;
     height: 100vh;
+    margin-bottom: 10%;
 
     @media (max-width: 600px) {
       display: flex;
