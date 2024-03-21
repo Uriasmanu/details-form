@@ -11,7 +11,7 @@ const ContainerBanner = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-        width: 0%;
+        width: 100%;
 
         img{
         width: 100vw;

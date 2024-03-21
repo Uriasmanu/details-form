@@ -38,7 +38,7 @@ const Form = styled.form`
         width: 330px;
         height: 300px;
         position:  relative;
-        top: -17rem;
+        top: -15rem;
         right: 0%;
         font-weight: bold;
         gap: 10px;
