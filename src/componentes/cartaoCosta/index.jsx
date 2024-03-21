@@ -27,7 +27,7 @@ const CartãoBack = styled.div`
         width: 80vw;
         height: 230px;
         z-index: 1;
-        top: 9rem;
+        top: 7rem;
         left: 10%;
         display: flex;
         flex-direction: column;
