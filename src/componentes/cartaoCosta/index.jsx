@@ -59,6 +59,17 @@ const Div = styled.div`
         background: none;
         border: none;
     }
+
+    @media only screen and (max-width: 600px) {
+        input{
+        position: relative;
+        top: 77px;
+        width: 33px;
+        height: 20px;
+        background: none;
+        border: none;
+    }
+    }
 `;
 
 const Cartao2 = () => {
