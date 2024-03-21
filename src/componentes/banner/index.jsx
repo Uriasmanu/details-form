@@ -11,6 +11,8 @@ const ContainerBanner = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
+        background-image: url('/public/images/bg-main-mobile.png');
+        width: 100vw;
 
 
         img{
